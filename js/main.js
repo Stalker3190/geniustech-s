@@ -40,7 +40,7 @@ function toggleGroupOption(enable) {
         groupButton.disabled = false;
     } else {
         groupButton.disabled = true;
-        // Если выбран английский язык и включена группа, переключаем на индивидуальные
+        // Если выбран английский язык и включена группа, переключаю на индивидуальные
         if (group === 1) {
             group = 0;
             document.getElementById("typeGroup1").checked = true;
@@ -51,7 +51,7 @@ function toggleGroupOption(enable) {
 }
 
 window.onload = function() {
-    toggleGroupOption(language === 0);  // Включаем только если выбран русский
+    toggleGroupOption(language === 0);  // Включаю только если выбран русский
     setValueInTableOfPrice(currency, format, group);
 }
 
