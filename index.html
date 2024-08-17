@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- <meta http-equiv="refresh" content="0; url=http://geniustech-s.com/"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/fontello.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="img/icon-48.ico" type="image/x-icon">
+		<title>Genius Tech School - международная онлайн-школа программирования</title>
+		<meta name="description" content="Программирование для детей. Компьютерная грамотность, WEB-программирование, Scratch, Python, 3D-моделирование, программирование Minecraft. Онлайн занятия или занятия в кабинетах. Групповые или индивидуальные.">
+</head>
+
+<body style="overflow-x: hidden;">
+
+	<div id="circles-container">
+		<div class="circle circle1"></div>
+		<div class="ring ring1"></div>
+		<div class="circle circle2"></div>
+		<div class="circle circle3"></div>
+
+		
+		<div class="ring ring2"></div>
+		<div class="circle circle4"></div>
+		<div class="circle circle5"></div>
+		<div class="ring ring3"></div>
+		<div class="circle circle6"></div>
+
+		
+		<div class="circle circle7"></div>
+		<div class="circle circle8"></div>
+	</div>
+
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-colorDarkBlue">
+			<div class="container">
+					<a class="navbar-brand" href="#">
+						<img src="img/icon.svg" alt=""  height="50">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="#about">О нас</a>
+								</li>
+								<li class="nav-item">
+									<a id="coursesLink" class="nav-link" href="#">Курсы</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#learningFormat">Формат обучения</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#reviews">Отзывы</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#teachers">Преподаватели</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#price">Стоимость</a>
+								</li>
+								
+							</ul>
+						</div>
+						<a href="#record" class="btn btn-trialLesson" type="button">Пробное занятие</a>
+				</div>
+		</nav>
+
+	<header>
+			<div class="container">
+					<div class="row align-items-center justify-content-center row-cols-auto">
+								<div class="col-12 col-md-7 col-lg-5 d-flex flex-column">
+									<p class="text-header text-center text-white p-4 fs-2 fw-bold">Идёт набор на обучение в международную онлайн-школу программирования "Genius Tech School"</p>
+									<a href="#record" class="btn btn-trialLesson btn-lg text-uppercase mt-3 mb-3">Пробное занятие</a>
+								</div>
+								<div class="col-8 col-md-4 col-lg-3 align-items-center justify-content-center">
+									<img src="img/icon-gen-al.png" alt="логотип" class="img-fluid">
+								</div>                 
+					</div>
+			</div>
+	</header>
+
+	<!-- <header>
+		<div class="container">
+				<div class="row">
+						<div class="col-12">
+								<p class="col-md-6 col-12 text-header text-center text-white p-4 fs-2 fw-bold">Идёт набор на обучение в международную онлайн-школу программирования "Genius Tech School"</p>
+								<a href="#record" class="btn btn-trialLesson  btn-lg text-uppercase mt-3 mb-3">Пробное занятие</a>
+
+						</div>
+				</div>
+		</div>
+</header> -->
+
+
+	<section id="about" class="about">
+		<div class="container">
+			<div class="row align-items-center justify-content-center row-cols-auto">
+					<div class="col-lg-4 col-md-6 col-8">
+							<img src="img/genius.webp" alt="Джениус" class="img-fluid">
+					</div>
+					
+					<div class="col-md-5 col-8">
+							<h1>Genius Tech School</h1>
+							<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2"> - это международная онлайн школа программирования для детей от 6 лет.</p>
+							<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Я - Джениус, помогу тебе погрузиться в этот невероятный мир технологий и волшебства!</p>
+					</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!--                                                           Таблица курсов -->
+
+	<section id="courses" class="courses bg-colorDarkBlue">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-12">
+					<div class="h2 text-white offset-1">Курсы</div>
+				</div>
+			</div>
+
+			<div class="row">      
+				<div id="carouselCourses" class="carousel slide" data-bs-ride="carousel">
+
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselCourses" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselCourses" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselCourses" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#carouselCourses" data-bs-slide-to="3" aria-label="Slide 4"></button>
+						<button type="button" data-bs-target="#carouselCourses" data-bs-slide-to="4" aria-label="Slide 5"></button>
+						<button type="button" data-bs-target="#carouselCourses" data-bs-slide-to="5" aria-label="Slide 6"></button>
+					</div>
+
+					<div class="carousel-inner text-md-start text-center">	
+
+						<div class="carousel-item active">
+							<div class="row justify-content-center align-items-center">
+								<div class="col-md-7 col-9 course course1">
+									<div class="text course-inner align-items-center">
+										<div class="box-image course-inner float-md-end float-none justify-content-center  m-md-2 m-2 mb-3">
+											<img src="img/courseImg1.png" alt="Компьютерная грамотность">
+										</div>
+										<h4 class="text-uppercase fs-4 fw-bold">Компьютерная <span class="fs-3 ">грамотность</span></h4>
+										
+										<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Что такое компьютер и с чем его едят? Выучим сейчас - сэкономим кучу времени в будущем!</p>
+										<a href="" id="openPopup1" class="text-uppercase fw-bold fs-4 float-md-start open-popup" data-popup="popup1" data-bs-toggle="modal" data-bs-target="#modalCourse1">Подробнее</a>
+									</div>										
+								</div>
+							</div>			
+						</div>
+
+						<div class="carousel-item">
+							<div class="row justify-content-center align-items-center">
+								<div class="col-md-7 col-9 course course7 ">
+									<div class="text course-inner">
+										<div class="box-image course-inner float-md-end float-none justify-content-center m-md-2 m-1">
+											<img src="img/courseImg7.png" alt="Математика">
+										</div>
+										<h4 class="text-uppercase fs-4 fw-bold">Математика</h4>											
+										<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Математика для 1-11 классов. Разбор школьной программы. Улучшение успеваемости. Развитие логического мышления.</p>
+										<a href="" id="openPopup7" class="text-uppercase fw-bold fs-4 open-popup" data-popup="popup7" data-bs-toggle="modal" data-bs-target="#modalCourse2">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="row justify-content-center align-items-center">
+								<div class="col-md-7 col-9 course course8">
+									<div class="text course-inner">
+										<div class="box-image course-inner float-md-end float-none justify-content-center m-md-2 m-1">
+											<img src="img/courseImg8.png" alt="Математика">
+										</div>
+										<h4 class="text-uppercase fs-4 fw-bold">Шахматы</h4>											
+										<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Развитие умственных способностей, концентрации, критического и абстрактного мышления, анализа, синтеза и оценки.
+											<br><b>Cтоимость смотрите по ссылке в "Подробнее"</b></p>
+										<a href="" id="openPopup8" class="text-uppercase fw-bold fs-4 open-popup" data-popup="popup8" data-bs-toggle="modal" data-bs-target="#modalCourse2">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="row justify-content-center align-items-center">
+								<div class="col-md-7 col-9 course course2 ">
+									<div class="text course-inner">
+										<div class="box-image course-inner float-md-end float-none justify-content-center m-md-2 m-1">
+											<img src="img/courseImg2.png" alt="HTML/CSS/JS">
+										</div>
+										<h4 class="text-uppercase fs-4 fw-bold"><span class="fs-3 span-WEB-W">W</span><span class="fs-3 span-WEB-E">E</span><span class="fs-3 span-WEB-B">B</span>-Программирование</h4>											
+										<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">WEB-программирование - это творческая работа, так как каждая задача уникальна, и для ее решения существует несколько способов.</p>
+										<a href="" id="openPopup2" class="text-uppercase fw-bold fs-4 open-popup" data-popup="popup2" data-bs-toggle="modal" data-bs-target="#modalCourse2">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">								
+							<div class="row justify-content-center align-items-center">
+								<div class="col-md-7 col-9 course course3 ">
+									<div class="text course-inner">
+										<div class="box-image course-inner float-md-end float-none justify-content-center m-md-2 m-1">
+											<img  src="img/courseImg3.png" alt="Scratch">
+										</div>
+										<h4 class="text-uppercase fs-4 fw-bold">Программирование <span class="fs-3">Scratch</span></h4> 
+										<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Теперь ты больше не играешь в игры, а создаёшь их! Здесь ты можешь воплотить самые нестандартные идеи.</p>
+										<a href="" id="openPopup3" class="text-uppercase fw-bold fs-4 open-popup" data-popup="popup3" data-bs-toggle="modal" data-bs-target="#modalCourse3">Подробнее</a>
+									</div>									 
+								</div>
+							</div>			
+						</div>
+
+						<div class="carousel-item">								
+							<div class="row justify-content-center align-items-center">
+								<div class="col-md-7 col-9 course course4 ">
+									<div class="text course-inner">
+										<div class="box-image course-inner float-md-end float-none justify-content-center m-md-2 m-1">
+											<img  src="img/courseImg4.png" alt="3D-моделирование">
+										</div>
+										<h4 class="text-uppercase fs-4 fw-bold"><span class="fs-3">3D-</span> моделирование</h4>
+										<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Для того чтобы создавать свои собственные модели не нужны художественные навыки, главное это желание и стремление!</p>
+										<a href="" id="openPopup4" class="text-uppercase fw-bold fs-4 open-popup" data-popup="popup4" data-bs-toggle="modal" data-bs-target="#modalCourse4">Подробнее</a>
+									</div>										
+								</div>
+							</div>			
+						</div>
+
+						<div class="carousel-item">								
+							<div class="row justify-content-center align-items-center">
+								<div class="col-md-7 col-9 course course5 ">
+									<div class="text course-inner">
+										<div class="box-image course-inner float-md-end float-none justify-content-center m-md-2 m-1">
+											<img  src="img/courseImg5.png" alt="Python">
+										</div>
+										<h4 class="text-uppercase fs-4 fw-bold">Программирование <span class="fs-3 span-PY-PYT">PYT</span><span class="fs-3 span-PY-HON">HON</span></h4>
+										
+										<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Один из самых популярных языков - и всё для тебя! Программирование тренирует логику, развивает творческое и аналитическое мышление.</p>
+										<a href="" id="openPopup5" class="text-uppercase fw-bold fs-4 open-popup" data-popup="popup5" data-bs-toggle="modal" data-bs-target="#modalCourse5">Подробнее</a>
+									</div>										
+								</div>
+							</div>			
+						</div>
+
+						<div class="carousel-item">								
+							<div class="row justify-content-center align-items-center">
+								<div class="col-md-7 col-9 course course6 ">
+									<div class="text course-inner">
+										<div class="box-image course-inner float-md-end float-none justify-content-center m-md-2 m-1">
+											<img  src="img/courseImg6.png" alt="Minecraft">
+										</div>
+										<h4 class="text-uppercase fs-4 fw-bold">Программирование <img class="course-img-minecraft" src="img/courseImg6logo.png" alt="minecraft"></h4>
+										
+										<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Создание собственных и уникальных объектов в Minecraft не мышкой, а с помощью логических команд и скриптов.</p>
+										<a href="" id="openPopup6" class="text-uppercase fw-bold fs-4 open-popup" data-popup="popup6" data-bs-toggle="modal" data-bs-target="#modalCourse6">Подробнее</a>
+									</div>										
+								</div>
+							</div>			
+						</div>
+					</div>
+
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselCourses" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselCourses" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+
+			</div>
+		</div>  
+	</section>
+
+
+	<!--                                                                  Таблица курсов TEST-->
+	<section id="l-courses"class="l-courses bg-colorDarkBlue">
+		<div class="container">
+			<div class="row">
+				<div class="col-11 m-4">
+					<div class="h2 text-white offset-1 text-center">Курсы</div>
+				</div>
+			</div>
+			<div class="col-12 m-4">
+				<div class="h3 text-white offset-1 text-grey">Общее развитие</div>
+			</div>
+			<div class="row align-items-center d-flex justify-content-center">
+				<div class="col-md-5 col-8 l-course course7 text-md-start text-center align-items-center">
+					<img src="img/courseImg7.png" alt="Математика">
+					<h4 class="text-uppercase fs-5 fw-bold"><span class="fs-4 ">Математика</span></h4>       
+					<p class="fs-6 mb-md-4 mt-md-4 mb-2 mt-2">Математика для 1-11 классов. Разбор школьной программы. Улучшение успеваемости. Развитие логического мышления.</p>
+					<a href="javascript:void(0);" id="openPopup7" class="text-uppercase fw-bold fs-5 float-md-start open-popup" data-popup="popup7">Подробнее</a>
+				</div>
+				<div class="col-md-5 col-8 l-course course8 text-md-start text-center align-items-center">
+					<img src="img/courseImg8.png" alt="Шахматы">
+					<h4 class="text-uppercase fs-5 fw-bold"><span class="fs-4 ">Шахматы</span></h4>       
+					<p class="fs-6 mb-md-4 mt-md-4 mb-2 mt-2">Развитие умственных способностей, концентрации, критического и абстрактного мышления, анализа, синтеза и оценки. 
+						<br><b>Cтоимость смотрите по ссылке в "Подробнее"</b></p>
+					<a href="javascript:void(0);" id="openPopup8" class="text-uppercase fw-bold fs-5 float-md-start open-popup" data-popup="popup8">Подробнее</a>
+				</div>
+				<div class="col-12 m-4">
+					<div class="h3 text-white offset-1">Программирование</div>
+				</div>
+			</div>
+			<div class="row align-items-center d-flex justify-content-center">
+				<div class="col-md-5 col-8 l-course course1 text-md-start text-center">
+						<img src="img/courseImg1.png" alt="Компьютерная грамотность">
+						<h4 class="text-uppercase fs-5 fw-bold">Компьютерная <span class="fs-4 ">грамотность</span></h4>       
+						<p class="fs-6 mb-md-4 mt-md-4 mb-2 mt-2">Что такое компьютер и с чем его едят? Выучим сейчас - сэкономим кучу времени в будущем!</p>
+						<a href="javascript:void(0);" id="openPopup1" class="text-uppercase fw-bold fs-5 float-md-start open-popup" data-popup="popup1">Подробнее</a>
+				</div>
+				<div class="col-md-5 col-8 l-course course2 text-md-start text-center">
+					<img src="img/courseImg3.png" alt="Компьютерная грамотность">
+					<h4 class="text-uppercase fs-5 fw-bold"><span class="fs-4 span-WEB-W">W</span><span class="fs-4 span-WEB-E">E</span><span class="fs-4 span-WEB-B">B</span>-Программирование</h4>       
+					<p class="fs-6 mb-md-4 mt-md-4 mb-2 mt-2">WEB-программирование - это творческая работа, так как каждая задача уникальна, и для ее решения существует несколько способов.</p>
+					<a href="javascript:void(0);" id="openPopup2" class="text-uppercase fw-bold fs-5 float-md-start open-popup" data-popup="popup2">Подробнее</a>
+				</div>
+				<div class="col-md-5 col-8 l-course course3 text-md-start text-center">
+					<img src="img/courseImg3.png" alt="Компьютерная грамотность">
+					<h4 class="text-uppercase fs-5 fw-bold">>Программирование <span class="fs-3">Scratch</span></h4>       
+					<p class="fs-6 mb-md-4 mt-md-4 mb-2 mt-2">Теперь ты больше не играешь в игры, а создаёшь их! Здесь ты можешь воплотить самые нестандартные идеи.</p>
+					<a href="javascript:void(0);" id="openPopup3" class="text-uppercase fw-bold fs-5 float-md-start open-popup" data-popup="popup3">Подробнее</a>
+				</div>
+				<div class="col-md-5 col-8 l-course course4 text-md-start text-center">
+					<img src="img/courseImg4.png" alt="Компьютерная грамотность">
+					<h4 class="text-uppercase fs-5 fw-bold"><span class="fs-3">3D-</span> моделирование</h4>       
+					<p class="fs-6 mb-md-4 mt-md-4 mb-2 mt-2">Для того чтобы создавать свои собственные модели не нужны художественные навыки, главное это желание и стремление!</p>
+					<a href="javascript:void(0);" id="openPopup4" class="text-uppercase fw-bold fs-5 float-md-start open-popup" data-popup="popup4">Подробнее</a>
+				</div>
+				<div class="col-md-5 col-8 l-course course5 text-md-start text-center">
+					<img src="img/courseImg5.png" alt="Компьютерная грамотность">
+					<h4 class="text-uppercase fs-5 fw-bold">Программирование <span class="fs-3 span-PY-PYT">PYT</span><span class="fs-3 span-PY-HON">HON</span></h4>       
+					<p class="fs-6 mb-md-4 mt-md-4 mb-2 mt-2">Один из самых популярных языков - и всё для тебя! Программирование тренирует логику, развивает творческое и аналитическое мышление.</p>
+					<a href="javascript:void(0);" id="openPopup5" class="text-uppercase fw-bold fs-5 float-md-start open-popup" data-popup="popup5">Подробнее</a>
+				</div>
+				<div class="col-md-5 col-8 l-course course6 text-md-start text-center">
+					<img src="img/courseImg6.png" alt="Компьютерная грамотность">
+					<h4 class="text-uppercase fs-5 fw-bold">Программирование <img class="course-img-minecraft" src="img/courseImg6logo.webp" alt="minecraft"></h4>       
+					<p class="fs-6 mb-md-4 mt-md-4 mb-2 mt-2">Создание собственных и уникальных объектов в Minecraft не мышкой, а с помощью логических команд и скриптов.</p>
+					<a href="javascript:void(0);" id="openPopup6" class="text-uppercase fw-bold fs-5 float-md-start open-popup" data-popup="popup6">Подробнее</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+																																			<!-- Modal -->
+<div id="popup1" class="popup">
+	<div class="popup-content">
+		<span class="close" id="closePopup1">&times;</span>
+		<h2>Компьютерная грамотность</h2>
+		<p>После прохождения курса ребенок узнает:</p>
+			<ul>
+				<li>Что такое компьютер и с чем его едят;</li>
+				<li>Как работать с основными программами в Windows;</li>
+				<li>Как работать с основными программами из пакета Microsoft Office;</li>
+				<li>Немного о том, как работает интернет и всё о безопасности в нём;</li>
+				<li>Разумеется, горячие клавиши - выучим сейчас - сэкономим кучу времени в будущем!</li>
+			</ul>
+	</div>
+</div>
+
+<div id="popup2" class="popup">
+	<div class="popup-content">
+		<span class="close" id="closePopup2">&times;</span>
+		<h2>Основы front-end</h2>
+		<p>На этом курсе подростки изучат основы html, css и js. 
+			Напишут свой первый многостраничный сайт
+		</p>
+	</div>
+</div>
+
+<div id="popup3" class="popup">
+	<div class="popup-content">
+		<span class="close" id="closePopup3">&times;</span>
+		<h2>Программирование scratch</h2>
+		<p>После прохождения курса ребенок узнает:</p>
+			<ul>
+				<li>Что такое Scratch и как вообще в нём работать;</li>
+				<li>Научится думать как программист (будет подходить ко всему логически);</li>
+				<li>Создаст кучу игр,  накапливания знания, необходимые для становления программистом</li>
+			</ul>
+	</div>
+</div>
+
+<div id="popup4" class="popup">
+	<div class="popup-content">
+		<span class="close" id="closePopup4">&times;</span>
+		<h2>3D визуализация персонажей</h2>
+		<p>После прохождения курса учащийся узнает:</p>
+		<ul>
+			<li>Полный пайплайн создания геймреди модели;</li>
+			<li>Создаст свою первую модель;</li>
+			<li>Получит навыки для устройства на работу по этой специальности.</li>
+		</ul>
+	</div>
+</div>
+
+<div id="popup5" class="popup">
+	<div class="popup-content">
+		<span class="close" id="closePopup5">&times;</span>
+		<h2>Программирование Python</h2>
+		<p>
+			У Python простой код и понятный синтаксис: ребятам легко работать с переменными, алгоритмами, функциями, командами.
+			После обучения у ребят останется фундамент знаний по программированию.
+			Программирование тренирует логику, учит ставить цели и находить ошибки, развивает творческое и аналитическое мышление.
+			После обучения ребята станут увереннее на уроках математики, физики, информатики.
+		</p>
+	</div>
+</div>
+
+<div id="popup6" class="popup">
+	<div class="popup-content">
+		<span class="close" id="closePopup6">&times;</span>
+		<h2>Minecraft</h2>
+		<p>
+			После прохождения курса ребенок узнает:
+			<ul>
+				<li>Как решать задачи по программированию;</li>
+				<li>Как строить логические цепочки действий;</li>
+				<li>Сформирует навыки планирования;</li>
+				<li>Разовьет воображение;</li>
+				<li>Научится создавать собственные и уникальные объекты в Minecraft не мышкой, а с помощью логических команд и скриптов.</li>
+			</ul>
+		</p>
+	</div>
+</div>
+
+<div id="popup7" class="popup">
+	<div class="popup-content">
+		<span class="close" id="closePopup7">&times;</span>
+		<h2>Математика</h2>
+		<p>
+			После прохождения курса ребенок улучшит свои математические навыки:
+			<ul>
+				<li>Решение разнообразных математических задач;</li>
+				<li>Изучение геометрии и алгебры;</li>
+				<li>Применение математики в реальных ситуациях;</li>
+				<li>Развитие логического мышления;</li>
+				<li>Повышение математической грамотности.</li>
+			</ul>
+		</p>
+	</div>
+</div>
+
+<div id="popup8" class="popup popup8">
+	<div class="popup-content">
+		<span class="close" id="closePopup8">&times;</span>
+		<h2>Шахматы</h2>
+		<p>
+			Шахматы — бесконечная тренировка для ума.
+			Шахматы развивают умственные способности, улучшая концентрацию, 
+			критическое и абстрактное мышление, а также навыки анализа, 
+			синтеза и оценки. Они тренируют память, делая ребёнка более самостоятельным.
+			Игры в шахматы учат детей планировать свои действия на несколько шагов 
+			вперед, что помогает им становиться более уверенными в принятии решений. 
+			Эти навыки бесценны и обязательно пригодятся в дальнейшей жизни.
+		</p>
+		
+		<a href="chess.html"><b>Стоимость обучения</b></a>
+		
+	</div>
+</div>
+
+<!--                                                                  Формат обучения -->
+	<section id="learningFormat" class="learningFormat">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-12"><h2 class="text-center mb-5">Форматы обучения</h2></div>
+			</div>
+
+				<div class="row d-flex justify-content-around">
+					<div class=" format col-8 col-md-5 col-lg-3 p-0 m-md-1 mb-2">
+						<h4 class="text-white">Группа</h4>
+						<img src="img/icon-people.png" alt="">
+						<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Группа до 6 человек</p>
+						<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Занятие - 120 мин.</p>
+						<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">1-2 раза в неделю.</p>
+					</div>
+
+					<div class=" format col-8 col-md-5 col-lg-3 p-0 m-md-1 mb-2">
+						<h4 class="text-white">Индивидуальный</h4>
+						<img src="img/icon-one-to-one.png" alt="">
+						<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Один на один с учителем.</p>
+						<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Занятие - 60 мин.</p>
+						<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Количество занятий обговариваются.</p>
+					</div>
+		
+					<div class=" format col-8 col-md-5 col-lg-3 p-0 m-md-1 mb-2">
+						<h4 class="text-white">Онлайн</h4>
+						<img src="img/icon-online.png" alt="">
+						<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Занятия проводятся с помощью Google Meet.</p>
+						<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Группа до 4 человек.</p>
+					</div>
+
+					<div class=" format col-8 col-md-5 col-lg-3 p-0 m-md-1 mb-2">
+						<h4 class="text-white">Офлайн</h4>
+						<img src="img/icon-ofline.png" alt="">
+						<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Занятия в кабинете с комьютерами.</p>
+						<p class="fs-5 mb-md-4 mt-md-4 mb-2 mt-2">Группа до 8 человек</p>
+					</div>
+					</div>
+
+		</div>
+	</section>
+
+
+<!--                                                                  Reviews -->
+
+<section id = "reviews" class="testimonials mt-5 bg-colorGradient">
+    <div class="container">
+        <h2 class="text-white">Отзывы о нашем обучении</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                <div class="card testimonial-card">
+                    <img src="img/review1.jpeg" class="card-img-top" alt="Отзыв 1">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Катерина</h5>
+                        <p class="card-text flex-grow-1">“Друзья! Хочу поделиться с вами самыми 
+							добрыми и положительными отзывами о занятиях в айти школе. 
+							В первую очередь хочу поделиться восторгом своего ребёнка 
+							от занятий ему очень нравится модуляции различных 
+							персонажей, при этом он не только проводит целый час учась 
+							на просторах информационного интеллекта что в наше время 
+							категорически важно т.к. без этих навыков становится все 
+							тяжелее, но и при этом получает безусловно удовольствие от 
+							своей же учёбы. Хочу отметить так же работу педагогов с 
+							детками, их индивидуальный подход и вовлеченность в 
+							занятии к ребёнку помогают добиться больших результатов в 
+							развитии ребёнка что очень важно. Педагоги подобраны со 
+							всей душой и могут найти контакт и заинтересовать, вовлечь 
+							в занятие любого ребёнка после которого довольны мама и 
+							ребёнок.”</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                <div class="card testimonial-card">
+                    <img src="img/review2.jpeg" class="card-img-top" alt="Отзыв 2">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Юлия</h5>
+                        <p class="card-text flex-grow-1">“Добрый день! 😇🙏🏻 Хочу выразить 
+							огромную благодарность школе Genius Tech School за знания, 
+							которые получает мой ребенок. Сын посещает курс 
+							«программирование», наблюдаю большую заинтересованность, а 
+							это главное. Лучшая оценка школе, преподавателям, когда 
+							дети с радостью, желанием занимаются и не менее важно, 
+							получают хорошие навыки и умения, которые и будут полезными 
+							в жизни!!! Верю, Genius Tech School, у Вас большое будущее!  
+							Преподавателям и администрации огромное спасибо!❤️💫”</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                <div class="card testimonial-card">
+                    <img src="img/review3.jpeg" class="card-img-top" alt="Отзыв 3">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Светлана</h5>
+                        <p class="card-text flex-grow-1">“Хочу выразить огромную благодарность за 
+							создание такой прекрасной школы"Genius Tech School"Как нам 
+							повезло , что мы встретили прекрасного тренера по шахматам 
+							Ксению!Спасибо за то, что смогли не только заинтересовать, 
+							но и привить любовь к шахматам.Сын занимается с огромным 
+							удовольствием и увлечением!Хочу пожелать школе процветания 
+							и успехов!!!”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--                                                                  Teachers -->
+
+<section id = "teachers" class="teachers bg-colorDarkBlue">
+    <div class="container">
+        <h2 class="text-white">Наши преподаватели</h2>
+        <div id="teachersCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                            <div class="card teacher-card">
+                                <img src="img/teacher1.jpeg" class="card-img-top" alt="Преподаватель 1">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Красовская Ксения Сергеевна</h5>
+                                    <p class="card-subject"><strong>Предмет:</strong> Шахматы</p>
+                                    <p class="card-text ">Я Красовская Ксения Сергеевна 
+										занимаюсь шахматам с 9 лет, Кандидат в Мастера Спорта, 
+										многократно занимала призовые места в городских соревнованиях в 
+										том числе: 
+										<ul>
+											<li>второе место на чемпионате города Минска среди женщин 
+												2022/2023</li>
+											<li>выиграла международный турнир Гродно-опен 2021 в своей 
+											категории</li>
+										</ul>
+										Учусь на третьем курсе Белорусского государственного 
+										университета физической культуры и спорта (БГУФК) по 
+										специальности: тренер по шахматам, участвовала в различных 
+										научных конференциях с работами нацеленными на улучшение 
+										учебно-тренировочного процесса по шахматам.
+										Есть опыт работы с детьми от 3 до 16 лет. Работаю уже на 
+										протяжении 3 лет.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                            <div class="card teacher-card">
+                                <img src="img/teacher2.jpeg" class="card-img-top" alt="Преподаватель 2">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Александра Ростиславовна</h5>
+                                    <p class="card-subject"><strong>Предмет:</strong> Математика</p>
+                                    <p class="card-text flex-grow-1">Меня зовут Александра Ростиславовна, 
+										и вот уже 4ый год я преподаю математику. Своей основной задачей я 
+										считаю заинтересовать каждого ребенка в изучении своего предмета, 
+										ведь математика - вещь многогранная и необходимая. Для этого к 
+										каждому ребенку я стараюсь найти индивидуальный подход, комбинирую 
+										различные виды объяснений, активно использую визуализации для 
+										облегчения понимания материала.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                            <div class="card teacher-card">
+                                <img src="img/teacher3.jpeg" class="card-img-top" alt="Преподаватель 3">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Дарья Дмитриевна</h5>
+                                    <p class="card-subject"><strong>Предмет:</strong> Программирование</p>
+                                    <p class="card-text flex-grow-1">Меня зовут Дарья, я преподаю программирование 
+										уже два года. Моё увлечение программированием началось в подростковом возрасте.
+										<br>Я закончила Минский Радиотехнический Колледж, а также прошла 
+										компьютерные курсы в "Айтиландии". Сейчас получаю высшее образование в 
+										университете БГУИР.
+										<br>Среди моих достижений:
+										<ul>
+											<li>2-е место на Республиканском фестивале талантов START UP-2019 в 
+												категории "Компьютерная графика и дизайн".</li>
+											<li>3-е место на Республиканском фестивале талантов START UP-2018 в той 
+												же категории.</li>
+										</ul>		
+										Я всегда стараюсь найти индивидуальный подход к каждому ученику. Мне 
+										важно, чтобы ребенок увлекся изучением программирования и нашел в этом 
+										занятии что-то свое.
+										<br>Моя цель — не просто научить программированию, но и вдохновить на 
+										дальнейшее развитие в этой области. Я верю, что с правильным подходом каждый 
+										ученик сможет раскрыть свой потенциал и добиться успеха.
+										</p>
+                                </div>
+                            </div>
+                        </div>
+
+						<div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                            <div class="card teacher-card">
+                                <img src="img/teacher4.jpeg" class="card-img-top" alt="Преподаватель 4">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Мария Владимировна</h5>
+                                    <p class="card-subject"><strong>Предмет:</strong> Шахматы</p>
+                                    <p class="card-text flex-grow-1">Меня зовут Мария Владимировна.  
+										Преподаю шахматы уже более 2 лет. Есть опыт работы с детьми от 5 
+										до 15 лет. 
+										Занималась шахматами с 10 лет, 2 разряд. Неоднократно занимала 
+										призовые места на городских и районных соревнованиях.
+										Закончила БГПУ им. Максима Танка по специальности "Начальное 
+										образование".
+										Так же преподаю Математику. Большой  опыт работы с детьми от 6 
+										до 12 лет.
+										Объясняю материал просто и доступно,, а так же с использованием 
+										различного интересного интерактивного материала.</p>
+                                </div>
+                            </div>
+                        </div>
+
+						<div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                            <div class="card teacher-card">
+                                <img src="img/teacher5.jpeg" class="card-img-top" alt="Преподаватель 4">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Дмитрий Соколов</h5>
+                                    <p class="card-subject"><strong>Предмет:</strong> 3D-моделирование</p>
+                                    <p class="card-text flex-grow-1">Опыт менторства: 3+ лет<br>
+										Опыт работы в гейм-дев индустрии: 2+ лет<br>
+										Занимаюсь разработкой персонажей для: игровой индустрии, а также 
+										3д-печати.<br>
+										Занимаюсь разработкой окружения, а также игровых локаций.<br>
+										Работаю с такими программами как: Blender, ZBrush, Marmoset Toolbag, 
+										Maya, Substance Painter, ClO 3d, 3ds Max.<br>
+										На курсе будет пройден полный пайплайн создания гейм-реди и хайполи 
+										моделей. На курсе будут затрагиваться настройки освещения для антуража 
+										и подчеркивания сцен, колористика, а также композиция.
+										</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Add more carousel items here for additional teachers -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#teachersCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#teachersCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+<!--                                                                              Price -->
+
+	<section id="price" class="price">
+
+		<div class="container">
+			<div class="row">
+				<div>
+					<h2 class="text-center mb-5">Стоимость</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="jumbotron bg-colorGradient">
+		<div class="container">
+			<div class="row col-12 d-flex justify-content-center align-items-center text-center">
+					<div class="btn-group col-md-2 col-8" role="group" aria-label="Basic radio toggle button group">
+						<input type="radio" class="btn-check" name="currency" id="currency1" autocomplete="off" checked>
+						<label class="btn btn-radio-db" for="currency1">BYN</label>
+					
+						<input type="radio" class="btn-check" name="currency" id="currency2" autocomplete="off">
+						<label class="btn btn-radio-db" for="currency2">USD</label>
+
+						<!-- <input type="radio" class="btn-check" name="currency" id="currency3" autocomplete="off">
+						<label class="btn btn-radio-db" for="currency3">RUB</label> -->
+					</div>
+					<div class="btn-group col-md-2 col-8" role="group" aria-label="Basic radio toggle button group">
+						<input type="radio" class="btn-check" name="typeFormat" id="typeFormat1" autocomplete="off" checked>
+						<label class="btn btn-radio-db" for="typeFormat1">ОНЛАЙН</label>
+					
+						<input type="radio" class="btn-check" name="typeFormat" id="typeFormat2" autocomplete="off">
+						<label class="btn btn-radio-db" for="typeFormat2">ОФЛАЙН</label>
+					</div>
+					<div class="btn-group col-md-3 col-8" role="group" aria-label="Basic radio toggle button group">
+						<input type="radio" class="btn-check" name="typeGroup" id="typeGroup1" autocomplete="off" checked>
+						<label class="btn btn-radio-db" for="typeGroup1">ИНДИВИД.</label>
+					
+						<input type="radio" class="btn-check" name="typeGroup" id="typeGroup2" autocomplete="off">
+						<label class="btn btn-radio-db" for="typeGroup2">ГРУППА</label>
+					</div>
+					
+					<div class="btn-group col-md-2 col-8" role="group" aria-label="Basic radio toggle button group">
+						<input type="radio" class="btn-check" name="language" id="languageRU" autocomplete="off" checked>
+						<label class="btn btn-radio-db" for="languageRU">РУССКИЙ</label>
+						
+						<input type="radio" class="btn-check" name="language" id="languageEN" autocomplete="off">
+						<label class="btn btn-radio-db" for="languageEN">ENGLISH</label>
+					</div>
+					
+					<div id="timeOfLesson" class="col-md-2 col-11 fw-bold mb-md-1 mb-4">Занятия по 60 минут</div>           
+			</div>
+		</div>
+	</div>
+	<div class="jumbotron bg-colorDarkBlue">
+		<div class="container">
+			<div class="row col-12 d-flex justify-content-center align-items-center text-center fw-3 fs-5">
+					<div class="blok-price col-lg-3 col-md-6 col-12 p-md-5 p-3">
+						<img class="mb-md-4 mt-md-4 mb-2 mt-2" src="img/Lamp-68.webp" alt="Lamp">
+						<p class="mb-md-4 mt-md-4 mb-2 mt-2"><span>4</span> занятия</p>
+						<p class="textPrice mb-md-4 mt-md-4 mb-2 mt-2" id="textPrice1"><span>200</span> BYN </p>
+						<p class="textPriceOne text-grey fs-6" id="textPriceOne1">50 BYN за занятие</p>
+					</div>
+					<div class="blok-price col-lg-3 col-md-6 col-12 p-md-5 p-3">
+						<img class="mb-md-4 mt-md-4 mb-2 mt-2" src="img/GroupOf2Lamps-68.webp" alt="2Lamps">
+						<p class="mb-md-4 mt-md-4 mb-2 mt-2"><span>8</span> занятий</p>
+						<p class="textPrice mb-md-4 mt-md-4 mb-2 mt-2" id="textPrice2"><span>384</span> BYN </p>
+						<p class="textPriceOne text-grey fs-6" id="textPriceOne2">48 BYN за занятие</p>
+					</div>
+					<div class="blok-price col-lg-3 col-md-6 col-12 p-md-5 p-3">
+						<img class="mb-md-4 mt-md-4 mb-2 mt-2" src="img/GroupOf4Lamps-68.webp" alt="4lamps">
+						<p class="mb-md-4 mt-md-4 mb-2 mt-2"><span>16</span> занятий</p>
+						<p class=" textPrice mb-md-4 mt-md-4 mb-2 mt-2" id="textPrice3"><span>720</span> BYN </p>
+						<p class="textPriceOne text-grey fs-6" id="textPriceOne3">45 BYN за занятие</p>
+					</div>
+					<div class="blok-price col-lg-3 col-md-6 col-12 p-md-5 p-3">
+						<img class="mb-md-4 mt-md-4 mb-2 mt-2" src="img/GroupOf5Lamps-68.webp" alt="5lamps">
+						<p class="mb-md-4 mt-md-4 mb-2 mt-2"><span>20</span> занятий</p>
+						<p class="textPrice mb-md-4 mt-md-4 mb-2 mt-2" id="textPrice4"><span>800</span> BYN </p>
+						<p class="textPriceOne text-grey fs-6" id="textPriceOne4">40 BYN за занятие</p>
+					</div>
+			</div>       
+		</div>
+	</div>
+	</section>
+
+	<section id="text1" class="text1">
+		<div class="container">
+			<div class="row">
+				<col-10>
+					<p class="fs-3 fw-bold">Понравилось? Или появились вопросы?</p>
+					<p class="fs-3 fw-bold">Записывайся на пробное занятие!</p>
+			</col-10>
+			</div>
+		</div>
+	</section>
+
+	<section id="record" class="record bg-colorGradient">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="text-center">
+						<img src="img/genius.webp" alt="Джениус" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="record-inherit d-grid">
+						<h3 class="text-center text-uppercase fw-bold mb-4">Запись на пробное занятие</h3>
+						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfPvJ9ydc3wbtn36X1o15ST-6sFrxQjNrr3o5iEwoZaeyUScQ/viewform?embedded=true" height="600" width="100%" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<footer class="bg-colorDarkBlue">
+		<div class="container">
+			<div class="row text-white ">
+				<div class="col-md-2 col-12 text-md-start text-center mb-3">
+					<img src="img/icon3.svg" alt="Иконка школы" class="img-fluid">
+				</div>         
+				<div class="col-md-3 col-12 text-md-start text-center mb-3">            
+					<h4>Genius Tech School</h4>
+					<p>международная онлайн-школа программирования для детей</p>
+				</div>
+				<div class="col-md-3 col-12 text-md-start text-center mb-3">
+					<p>Присоединяйтесь к нам в соц. сетях!</p>
+					<a href="https://vk.com/genius_tech_school" target="_blank"><i class="icon-vkontakte"></i></a>
+					<a href="https://ok.ru/group/70000002601119"><i class="icon-odnoklassniki"></i></a>
+					<a href="https://www.instagram.com/genius_tech_school/" target="_blank"><i class="icon-instagram"></i></a>      
+				</div>
+				<div class="col-md-4 col-12 text-md-start text-center mb-3 contact-container">
+					<h6>Контакты</h6>
+					<div class="contact justify-content-md-start justify-content-center">
+						<a href="tel:+375296014767">+375(29)-601-47-67</a>
+						<a href="https://t.me/GeniusTechSchool" target="_blank"><i class="icon-telegram"></i></a>
+						<a href="https://api.whatsapp.com/send?phone=375296014767" target="_blank"><i class="icon-whatsapp"></i></a>
+						<a href="viber://chat?number=+375296014767" target="_blank"><div class="icon-viber"></div></a>
+						<a href="viber://add?number=375296014767" target="_blank"><div class="icon-viber"></div></a>
+					</div>       
+					<h6 class="mt-2">Почта</h6>
+					<a href="mailto: geniustech.school@gmail.com">geniustech.school@gmail.com</a>
+					<p class="mt-3">ООО «Сириус ДКР», 220114, г. Минск, ул. Макаёнка, 12 Д, пом. 310, УНП 193650938</p>
+					
+					<a href="privacy_policy.html" class="">Политика конфиденциальности</a>
+					<br>
+					<a href="terms-of-service.html" class="">Договор оферты</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+	
+
+	<button id="btnToTop" class="btn-to-top"><i class="icon-up" style="font-size: 1.5rem;"></i></button>
+
+	<div class="btn-connect btn-connect-telegram">
+		<a href="https://t.me/GeniusTechSchool" target="_blank"><img src="img/t-164-w.png" alt="иконка телеграма"></a>
+	</div>
+
+	<div class="btn-connect btn-connect-whatsapp">
+		<a href="https://api.whatsapp.com/send?phone=375296014767" target="_blank"><img src="img/w-164-w.png" alt="иконка вотсапа"></a>
+	</div>
+
+	<!-- jQuery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

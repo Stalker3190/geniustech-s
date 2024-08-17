@@ -1,0 +1,1031 @@
+:root {
+    --colorDarkBlue: #000D29;
+    --colorBlue: #033D8C;
+    --colorLightBlue: #48A7C4;
+    /* --colorGreen: #B1DA68; */
+    --colorGreen: #9CC25A;
+    --colorGradient: linear-gradient(to right,  #47a6c7 0%,#9ac25a 100%);
+
+    --colorC2: #E44D26;
+    --colorC1: #8667F5;
+    --colorC3: #2EB200;
+    --colorC4: #9000ff;
+    --colorC5: #ffd33f;
+    --colorC6: #29800B;
+    --colorC7: #f68308;
+    --colorC8: #4d4d4d;
+
+
+    --colorGradientC2: linear-gradient(to right,  #E44D26 0%,#F1D129 100%);
+    --colorGradientC1: linear-gradient(to right,  #8667F5 0%,#A3DDEA 100%);
+    --colorGradientC3: linear-gradient(to right,  #2EB200 0%,#BDF129 100%);
+    --colorGradientC4: linear-gradient(to right,  #8F00FF 0%,#EC9EFF 100%);
+    --colorGradientC5: linear-gradient(to right,  #FFD33F 0%,#F3F72D 100%);
+    --colorGradientC6: linear-gradient(to right,  #29800B 0%,#8AAE21 100%);
+    --colorGradientC7: linear-gradient(to right,  #FFE39A 0%,#FFD363 100%);
+    --colorGradientC8: linear-gradient(to right,  #4d4d4d 0%,#8f8f8f 100%);
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+        font-family: 'AnonymousPro'; 
+        src: local('AnonymousPro'),
+            url(../fonts/AnonymousPro-Bold.ttf); 
+    }
+
+.text-green { 
+    color: var(--colorGreen);
+}
+
+.text-grey {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorGreen);
+}
+
+a:hover {
+    color: var(--colorLightBlue);
+}
+
+
+.bg-colorDarkBlue {
+    background: var(--colorDarkBlue);
+}
+.bg-colorGradient {
+    background: var(--colorGradient);
+}
+/* .active {
+    background: var(--colorGreen);
+} */
+
+header, section {
+    padding: 100px 0;
+}
+
+footer, .carousel {
+    padding: 50px 0;
+}
+
+.about {
+    padding: 130px 0;
+}
+
+.record {
+    padding: 120px 0;
+}
+
+header {
+    background: var(--colorGradient);
+}
+
+
+.text-header{
+    background-color: #000d2942;
+}
+
+.btn-trialLesson {
+    background: var(--colorGreen);
+    color: white;
+}
+
+.btn-trialLesson:hover {
+    background: var(--colorLightBlue);
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: #343a40; /* Dark background color for collapsed navbar */
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        padding-bottom: 10px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+}
+
+/*////////////////////////////////////////About */
+
+.about h1 {
+    color: #00275d;
+    font-weight: bold;
+}
+
+/* ////////////////////////////////////Курсы */
+
+
+@media (min-width: 991px) {
+    #courses {
+        display: none;
+    }
+
+    #l-courses {
+        display: block;
+    }
+}
+
+
+@media (max-width: 991px) {
+    #courses {
+        display: block;
+    }
+
+    #l-courses {
+        display: none;
+    }
+
+}
+
+.course {
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding: 30px;
+    background: #FFF;
+    z-index: 0;
+}
+
+.l-course {
+    margin: 5px;
+    border-radius: 26px;
+    border-style: solid;
+    border-width: 4px;
+    background: #FFFF;
+    position: relative;
+    padding: 30px;
+    z-index: 0;
+    
+    display: grid;
+    /* gap: 20px; */
+    grid-template-areas:
+        "A A A A A A"
+        "C C C B B B"
+        "D D D B B B";
+}
+
+
+.l-course h4 {
+    grid-area: A;
+}
+.l-course img {
+    grid-area: B;
+    height: 100px;
+}
+.l-course .course-img-minecraft {
+    height: 34px;
+}
+
+.course-img-minecraft {
+    height: 34px;
+}
+
+.l-course p {
+    grid-area: C;
+}
+.l-course a {
+    grid-area: D;
+}
+
+@media (max-width: 768px) {
+    .box-image{
+        max-height: 110px;
+    }
+    .box-image img{
+        max-height: 110px;
+    }
+
+    .course5 .box-image, .course2 .box-image{
+        max-height: 90px;
+    }
+    .course5 .box-image img, .course2 .box-image img{
+        max-height: 90px;
+    }
+
+    .course {
+        height: 75vh;
+        padding: 15px;
+    }
+
+}
+
+.box-image {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.course-inner {
+    z-index:10;
+}
+
+.course-inner a {
+    margin-top: 20px;
+}
+
+.course1 {
+    border-color: var(--colorC1);
+}
+
+.course2 {
+    border-color: var(--colorC2);
+}
+
+.course3 {
+    border-color: var(--colorC3);
+}
+
+.course4 {
+    border-color: var(--colorC4);
+}
+
+.course5 {
+    border-color: var(--colorC5);
+}
+
+.course6 {
+    border-color: var(--colorC6);
+}
+
+.course7 {
+    border-color: var(--colorC7);
+}
+
+.course8 {
+    border-color: var(--colorC8);
+}
+
+.course1 a, .course1 span {
+    color: #8974F4;
+}
+
+.course1 a:hover {
+    color: #A3DDEA;
+}
+
+.course2 a, .course2 span {
+    color: #FF3400;
+}
+
+.course2 a:hover {
+    color: #F1D129;
+}
+
+.span-WEB-W {
+    color: #E44D26;
+}
+
+.span-WEB-E {
+    color: #0070BA;
+}
+
+.span-WEB-B {
+    color: #63A814;
+}
+
+.course3 a,.course3 span {
+    color: #2EB200;
+}
+
+.course3 a:hover {
+    color: #BDF129;
+}
+
+.course4 a,.course4 span {
+    color: #AC81D8;
+}
+
+.course4 a:hover {
+    color: #DF8AFF;
+}
+
+.course5 a {
+    color: #FDD83C;
+}
+
+.course5 a:hover {
+    color: #F4F230;
+}
+
+.span-PY-PYT {
+    color: #FFD23D;
+}
+
+.span-PY-HON {
+    color: #2676A9;
+}
+
+.course6 a {
+    color: #33850D;
+}
+
+.course6 a:hover {
+    color: #7DA81E;
+}
+
+.course7 a {
+    color:  #ffd364;
+}
+
+.course7 a:hover {
+    color: #ffc32c;
+}
+
+.course8 a {
+    color:  #4d4d4d;
+}
+
+.course8 a:hover {
+    color: #8f8f8f;
+}
+
+/* .course-img-minecraft {
+    width: 30px;
+} */
+
+/* Modal */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.popup.active {
+    display: block;
+}
+
+.popup-content {
+    text-align: center;
+    color: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.popup h2 {
+    margin-bottom: 15px;
+    font-size: 24px; /* Увеличенный размер шрифта */
+}
+
+.popup8 a {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.popup8 a:hover {
+    color: #95ff99;
+}
+
+.popup-content p, .popup-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.popup-content ul {
+    list-style-type: disc;
+    text-align: left;
+}
+
+.popup-content ul li {
+    list-style-type: inherit;
+}
+
+@media (max-width: 768px) {
+    .popup {
+        height: 60%;
+        overflow-y: scroll;
+        z-index: 100;
+    }
+}
+/* Формат обучения */
+
+.format {
+    background: var(--colorGradient);
+    /* background: -moz-linear-gradient(left,  #47a6c7 0%, #9ac25a 100%);
+    background: -webkit-linear-gradient(left,  #47a6c7 0%,#9ac25a 100%);
+    background: linear-gradient(to right,  #47a6c7 0%,#9ac25a 100%); */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47a6c7', endColorstr='#9ac25a',GradientType=1 );
+    border-radius: 20px;
+    text-align: center;
+    width: 260px;    
+    color:var(--colorDarkBlue);
+    
+    font-weight: 500;
+    transition: 0.5s;
+
+    /* box-shadow: 0px 0px 10px 2px var(--colorLightBlue) */
+}
+
+.format h4{
+    background-color: var(--colorDarkBlue);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.format img {
+    margin: 15px;
+}
+
+/* .format:hover {
+    background: var(--colorGradientC1);
+    transition: 0.5s;
+} */
+
+.format:hover img {
+    filter: drop-shadow(5px 5px 10px rgb(255, 249, 230));
+    transition-duration: 0.3s;
+}
+
+
+/*                                    Reviews*/
+
+
+.testimonial-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: justify;
+}
+
+
+.testimonial-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/*                                    Teachers*/
+
+.teacher-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.teacher-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.teacher-card .card-subject {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.teacher-card .card-text {
+    text-align: justify;
+}
+
+
+
+/*                                    Стоимость*/
+
+.btn-group-radio {
+    border-radius: 20px;
+    border-style:inset;
+    border-color: var(--colorDarkBlue);
+    color: var(--colorGreen);
+    color: var(--colorGradient);
+}
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn.dropdown-toggle-split:first-child, .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.btngroup {
+    margin: 1%;
+}
+
+.btn-radio-db{
+    --bs-btn-color: rgba(255, 255, 255, 0.6);
+    --bs-btn-border-color: var(--colorDarkBlue);
+    --bs-btn-border-width: 3px;
+    --bs-btn-border-radius: 20px;
+    --bs-btn-hover-color: var(--colorGreen);
+    --bs-btn-hover-bg: var(--colorDarkBlue);
+    --bs-btn-hover-border-color: var(--colorGradient);;
+    --bs-btn-focus-shadow-rgb: 13,110,253;
+    --bs-btn-active-color: var(--colorGreen);
+    --bs-btn-active-bg: var(--colorDarkBlue);
+    --bs-btn-active-border-color: var(--colorDarkBlue);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--colorDarkBlue);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--colorDarkBlue);
+    --bs-gradient: none;
+    transition: 0.6s;
+}
+
+.blok-price {
+    color: #FFF;
+}
+
+.blok-price span {
+    color: var(--colorGreen);
+}
+
+.blok-price:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+}
+/* ................................Запись на пробное занятие */
+
+.record {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.record img {
+    max-width: 100%;
+    height: auto;
+}
+
+.record-inherit iframe {
+    width: 100%;
+}
+
+.record-inherit {
+    border-radius: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.record h3 {
+    color: var(--colorDarkBlue);    
+}
+
+.recordInputData {
+    background-color:inherit;
+    border-style: solid;
+    border-color: var(--colorDarkBlue);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 4px;
+    padding-left: 10px;
+    color:#001d45;
+}
+
+.recordInputData:focus {
+    color:#00462c;
+}
+
+.btn-enroll {
+    position: relative;
+    background: var(--colorLightBlue); 
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: #0a60d8;
+    padding: 4px;
+    z-index: 1;
+    margin: 10px;
+}
+
+.btn-enroll:hover {
+    background-color: var(--colorGreen);
+    border-color: #007523;
+    transition-duration: 0.4s;
+}
+/* .btn-enroll::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px;
+    background: var(--colorLightBlue);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+} */
+
+.btn-enroll:hover::before {
+    opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+    .record img {
+        max-width: 80%;
+    }
+
+    .record-inherit {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .record-inherit {
+        display: block;
+    }
+
+    .record img {
+        max-width: 100%;
+    }
+
+    .record-inherit iframe {
+        height: 500px;
+    }
+}
+
+
+/* footer */
+
+.contact-container {
+    max-width: 300px; /* Примерная ширина контейнера для контактной информации */
+    margin: 0 auto; /* Центрируем контейнер на маленьких экранах */
+    word-wrap: break-word; /* Перенос текста на новую строку */
+}
+
+/* .modal-content {
+    background-color: #d4dbe5;
+} */
+
+
+.btn-close {
+    background-color: var(--colorLightBlue);
+}
+
+.btn-close:hover {
+    background-color: var(--colorGreen);
+    transition-duration: 0.2s;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.icon-viber {
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/viber-g.svg');
+    background-size:contain;
+}
+
+.icon-viber:hover {
+    background-image: url('../img/viber-b.svg');
+    background-size:contain;
+}
+
+/* ....................................Кнопка связи */
+
+.btn-connect {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.btn-connect img {
+    height: 50px;
+    width: 50px;
+}
+
+
+.btn-connect-whatsapp {
+    bottom: 85px;
+    transition-duration: 0.2s;
+}
+
+.btn-to-top {
+    display: none;
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--colorGreen);
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .btn-to-top:hover {
+        background-color: var(--colorLightBlue  );
+        height: 60px;
+        width: 60px;
+        transition-duration: 0.2s;
+    }
+
+    .btn-connect:hover img, .btn-connect:hover{
+        height: 60px;
+        width: 60px;
+        bottom: 20px;
+        transition-duration: 0.2s;
+    }
+
+    
+    .btn-connect-whatsapp :hover img, .btn-connect-whatsapp:hover{
+        bottom: 75px;
+    }
+}
+
+
+
+.gradient-text {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg,  #47a6c7 0%,#9ac25a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    margin: 20px auto;
+  }
+
+
+/* Privacy Policy */
+
+.privacy-policy {
+    margin-top: 20px;
+}
+
+.privacy-policy h2 {
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.privacy-policy p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.privacy-policy strong {
+    font-weight: bold;
+}
+
+
+/* Chess */
+
+.chess-image {
+    text-align: center; 
+    margin: 2% 2% 2% 2%;
+}
+
+.chess-image img {
+    max-width: 100%; 
+    height: auto; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Добавляем тень для эффекта глубины */
+}
+
+.chess h2 {
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.chess p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.chess strong {
+    font-weight: bold;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd; /* Светло-серый цвет границ */
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd; /* Светло-серый цвет границ */
+    padding: 10px;
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.styled-table th {
+    background-color: #47a6c7; /* Синий цвет фона для заголовков */
+    color: white; /* Белый цвет текста для заголовков */
+}
+
+.styled-table td {
+    background-color: #eaf5ff; /* Очень светлый синий фон для всех ячеек */
+}
+
+.highlight {
+    background-color: #d5f0d7 !important; /* Мягкий зеленый фон для выделенных строк */
+}
+
+.highlight td {
+    background-color: #d5f0d7 !important; /* Мягкий зеленый фон для выделенных ячеек */
+}
+
+
+@media (max-width: 992px) {
+
+    .record-inherit {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .styled-table {
+        font-size: 14px; /* Уменьшаем размер шрифта для мобильных устройств */
+    }
+
+    .styled-table th, .styled-table td {
+        padding: 8px; /* Уменьшаем внутренний отступ для мобильных устройств */
+    }
+}
+
+@media (max-width: 576px) {
+    
+    .styled-table {
+        font-size: 12px; /* Дополнительно уменьшаем размер шрифта для очень узких экранов */
+    }
+
+    .styled-table th, .styled-table td {
+        padding: 6px; /* Уменьшаем внутренний отступ ячеек */
+    }
+}
+
+/* Скрываем некоторые столбцы на очень узких экранах, если нужно */
+@media (max-width: 480px) {
+    
+}
+
+
+/* ____________Circles________________ */
+
+@media (min-width: 1400px) {
+    #circles-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+    
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+        transition: all 0.3s ease; /* добавляем плавное изменение размера */
+    }
+
+    .ring {
+        position: absolute;
+        border: 60px solid transparent;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+    
+
+    .circle1 {
+        background-color: #FFBD4B; 
+        width: 336px; 
+        height: 336px; 
+        top: -50px; 
+        left: -110px; 
+        transform: scale(1);
+    }
+
+    .circle2 {
+        background-color: #F085D3; 
+        width: 117px; 
+        height: 117px; 
+        top: 156px; 
+        left: 272px; 
+        transform: scale(1);
+    }
+
+    .circle3 {
+        background-color: #C16EE5; 
+        width: 66px; 
+        height: 66px; 
+        top: 362px; 
+        left: 222px; 
+        transform: scale(1);
+    }
+
+    /* _______________ */
+
+    .circle4 {
+        background-color: #FFDF74; 
+        width: 371px; 
+        height: 371px; 
+        top: 440px; 
+        right: -140px; 
+        transform: scale(1);
+    }
+
+    .circle5 {
+        background-color: #F8C9EB; 
+        width: 287px; 
+        height: 287px; 
+        top: 736px; 
+        right: -42px; 
+        transform: scale(1);
+    }
+
+    .circle6 {
+        background-color: #76C6CA; 
+        width: 59px; 
+        height: 59px; 
+        top: 1200px; 
+        right: 42px; 
+        transform: scale(1);
+    }
+
+    /* _______________ */
+
+    .circle7 {
+        background-color: #FFE39A; 
+        width: 612px; 
+        height: 612px; 
+        top: 1600px; 
+        left: -450px; 
+        transform: scale(1);
+    }
+
+    .circle8 {
+        background-color: #FFD363; 
+        width: 727px; 
+        height: 727px; 
+        top: 2000px; 
+        left: -400px; 
+        transform: scale(1);
+    }
+
+
+
+    .ring1 {
+        border-color: #5CC2B0;
+        width: 274px;
+        height: 274px;
+        top: 133px;
+        left: -120px;
+        transform: scale(1);
+    }
+
+    /* __________________ */
+    
+    .ring2 {
+        border-color: #5CC2B0;
+        width: 274px;
+        height: 274px;
+        top: 274px;
+        right: 22px;
+        transform: scale(1);
+    }
+
+    .ring3 {
+        border-color: #A4D448;
+        width: 157px;
+        height: 157px;
+        top: 988px;
+        right: 100px;
+        transform: scale(1);
+    }
+
+}
