@@ -33,6 +33,30 @@ window.onresize = updateCourseLink;
 
 // Price
 
+function toggleGroupOption(enable) {
+    const groupButton = document.getElementById("typeGroup2");
+
+    if (enable) {
+        groupButton.disabled = false;
+    } else {
+        groupButton.disabled = true;
+        // Если выбран английский язык и включена группа, переключаем на индивидуальные
+        if (group === 1) {
+            group = 0;
+            document.getElementById("typeGroup1").checked = true;
+            document.getElementById("timeOfLesson").innerHTML = "Занятия по 60 минут";
+            setValueInTableOfPrice(currency, format, group);
+        }
+    }
+}
+
+window.onload = function() {
+    toggleGroupOption(language === 0);  // Включаем только если выбран русский
+    setValueInTableOfPrice(currency, format, group);
+}
+
+
+
 //BYN,онлайн, Инд
 //BYN,онлайн, Груп
 //BYN,офлайн, Инд
@@ -152,10 +176,13 @@ document.getElementById("typeGroup2").onclick = function() {
 
 document.getElementById("languageRU").onclick = function() {
     language = 0;
+    toggleGroupOption(true);  
     setValueInTableOfPrice(currency, format, group);
 }
+
 document.getElementById("languageEN").onclick = function() {
     language = 1;
+    toggleGroupOption(false);  
     setValueInTableOfPrice(currency, format, group);
 }
 
