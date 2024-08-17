@@ -52,6 +52,7 @@ a {
 
 a:hover {
     color: var(--colorLightBlue);
+    text-decoration: none;
 }
 
 
